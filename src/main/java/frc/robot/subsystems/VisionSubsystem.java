@@ -1,8 +1,8 @@
 
         // Calculate drivetrain commands from Joystick values
-        double forward = -controller.getLeftY() * Constants.Swerve.kMaxLinearSpeed;
-        double strafe = -controller.getLeftX() * Constants.Swerve.kMaxLinearSpeed;
-        double turn = -controller.getRightX() * Constants.Swerve.kMaxAngularSpeed;
+        double forward = -Xcontroller.getLeftY() * Constants.Swerve.kMaxLinearSpeed;
+        double strafe = -Xcontroller.getLeftX() * Constants.Swerve.kMaxLinearSpeed;
+        double turn = -Xcontroller.getRightX() * Constants.Swerve.kMaxAngularSpeed;
 
         // Read in relevant data from the Camera
         boolean targetVisible = false;
